@@ -10,14 +10,12 @@
 
   <body ng-controller="Controller">
 
-    <ui-view></ui-view>
+    <!-- <ui-view></ui-view>
 
     <div id="sidebar">
-      <!-- This is for the sidebar/search/whatever. -->
     </div>
 
     <div>
-      <!-- This is the card display. -->
       <ul>
         <li class="card stronghold">
           {Card Name}
@@ -114,7 +112,285 @@
         </li>
 
       </ul>
+    </div> -->
+    <div id="topbar">
+      <div id="search">
+        <div id="search-terms">
+          <p id="search1">Card Title</p>
+          <p id="search2">Card Type</p>
+          <p id="search3">Clan</p>
+          <p id="search4">Keywords</p>
+          <p id="search5">Card Text</p>
+          <p id="search6">Set</p>
+          <p id="search7">Legality</p>
+        </div>
+        <div id="search-input">
+          <input id="input1" class="search-input-choice">
+          <select id="input2" class="search-input-choice">
+            <option value="" selected=""></option>
+            <option value="Ancestor">Ancestor</option>
+            <option value="Celestial">Celestial</option>
+            <option value="Clock">Clock</option>
+            <option value="Event">Event</option>
+            <option value="Follower">Follower</option>
+            <option value="Holding">Holding</option>
+            <option value="Item">Item</option>
+            <option value="Other">Other</option>
+            <option value="Personality">Personality</option>
+            <option value="Proxy">Proxy</option>
+            <option value="Region">Region</option>
+            <option value="Ring">Ring</option>
+            <option value="Sensei">Sensei</option>
+            <option value="Spell">Spell</option>
+            <option value="Strategy">Strategy</option>
+            <option value="Stronghold">Stronghold</option>
+            <option value="Territory">Territory</option>
+            <option value="Wind">Wind</option>
+          </select>
+          <select id="input3" class="search-input-choice">
+            <option valut="" selected=""></option>
+            <option value="Brotherhood of Shinsei">Brotherhood of Shinsei</option>
+            <option value="Crab">Crab</option>
+            <option value="Crane">Crane</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Lion">Lion</option>
+            <option value="Mantis">Mantis</option>
+            <option value="Naga">Naga</option>
+            <option value="Ninja">Ninja</option>
+            <option value="Phoenix">Phoenix</option>
+            <option value="Ratling">Ratling</option>
+            <option value="Scorpion">Scorpion</option>
+            <option value="Shadowlands">Shadowlands</option>
+            <option value="Spider">Spider</option>
+            <option value="Spirit">Spirit</option>
+            <option value="Toturi's Army">Toturi's Army</option>
+            <option value="Unaligned">Unaligned</option>
+            <option value="Unicorn">Unicorn</option>
+          </select>
+          <input id="input4" class="search-input-choice">
+          <input id="input5" class="search-input-choice">
+          <select id="input6" class="search-input-choice">
+            <option value="" selected=""></option>
+            <option value="1,000 Years of Darkness">1,000 Years of Darkness</option>
+            <option value="2012 Holiday Pack">2012 Holiday Pack</option>
+            <option value="2012 Summer Convention">2012 Summer Convention</option>
+            <option value="2013 Kotei">2013 Kotei</option>
+            <option value="2013 Summer Convention">2013 Summer Convention</option>
+            <option value="2013 Winter Pack">2013 Winter Pack</option>
+            <option value="A Line in the Sand">A Line in the Sand</option>
+            <option value="A Matter of Honor">A Matter of Honor</option>
+            <option value="A Perfect Cut">A Perfect Cut</option>
+            <option value="Aftermath">Aftermath</option>
+            <option value="Alternate Art Card">Alternate Art Card</option>
+            <option value="Ambition's Debt">Ambition's Debt</option>
+            <option value="An Oni's Fury">An Oni's Fury</option>
+            <option value="Anvil of Despair">Anvil of Despair</option>
+            <option value="Battle of Beiden Pass">Battle of Beiden Pass</option>
+            <option value="Battle of Kyuden Tonbo">Battle of Kyuden Tonbo</option>
+            <option value="Before the Dawn">Before the Dawn</option>
+            <option value="Broken Blades">Broken Blades</option>
+            <option value="Celestial Edition">Celestial Edition</option>
+            <option value="Celestial Edition 15th Anniversary">Celestial Edition 15th Anniversary</option>
+            <option value="Code of Bushido">Code of Bushido</option>
+            <option value="Coils of Madness">Coils of Madness</option>
+            <option value="Crab vs. Lion">Crab vs. Lion</option>
+            <option value="Crimson and Jade">Crimson and Jade</option>
+            <option value="Dark Allies">Dark Allies</option>
+            <option value="Dawn of the Empire">Dawn of the Empire</option>
+            <option value="Death at Koten">Death at Koten</option>
+            <option value="Diamond Edition">Diamond Edition</option>
+            <option value="Drums of War">Drums of War</option>
+            <option value="Embers of War">Embers of War</option>
+            <option value="Emerald Edition">Emerald Edition</option>
+            <option value="Emperor Edition">Emperor Edition</option>
+            <option value="Emperor Edition Demo Decks">Emperor Edition Demo Decks</option>
+            <option value="Emperor Edition Gempukku">Emperor Edition Gempukku</option>
+            <option value="Empire at War">Empire at War</option>
+            <option value="Enemy of My Enemy">Enemy of My Enemy</option>
+            <option value="Evil Portents">Evil Portents</option>
+            <option value="Fire &amp;amp; Shadow">Fire &amp; Shadow</option>
+            <option value="Forbidden Knowledge">Forbidden Knowledge</option>
+            <option value="Forgotten Legacy">Forgotten Legacy</option>
+            <option value="Forgotten Legacy Anniversary">Forgotten Legacy Anniversary</option>
+            <option value="Gates of Chaos">Gates of Chaos</option>
+            <option value="Glory of the Empire">Glory of the Empire</option>
+            <option value="Gold Edition">Gold Edition</option>
+            <option value="Heaven &amp;amp; Earth">Heaven &amp; Earth</option>
+            <option value="Heroes of Rokugan">Heroes of Rokugan</option>
+            <option value="Hidden City">Hidden City</option>
+            <option value="Hidden Emperor 1">Hidden Emperor 1</option>
+            <option value="Hidden Emperor 2">Hidden Emperor 2</option>
+            <option value="Hidden Emperor 3">Hidden Emperor 3</option>
+            <option value="Hidden Emperor 4">Hidden Emperor 4</option>
+            <option value="Hidden Emperor 5">Hidden Emperor 5</option>
+            <option value="Hidden Emperor 6">Hidden Emperor 6</option>
+            <option value="Honor and Treachery">Honor and Treachery</option>
+            <option value="Honor Bound">Honor Bound</option>
+            <option value="Honor's Veil">Honor's Veil</option>
+            <option value="Imperial Edition">Imperial Edition</option>
+            <option value="Imperial Gift 3">Imperial Gift 3</option>
+            <option value="Ivory Edition">Ivory Edition</option>
+            <option value="Jade Edition">Jade Edition</option>
+            <option value="Khan's Defiance">Khan's Defiance</option>
+            <option value="L5R Experience">L5R Experience</option>
+            <option value="Lotus Edition">Lotus Edition</option>
+            <option value="Obsidian Edition">Obsidian Edition</option>
+            <option value="Oracle of the Void">Oracle of the Void</option>
+            <option value="Path of Hope">Path of Hope</option>
+            <option value="Path of the Destroyer">Path of the Destroyer</option>
+            <option value="Pearl Edition">Pearl Edition</option>
+            <option value="Pre-Imperial Edition">Pre-Imperial Edition</option>
+            <option value="Reign of Blood">Reign of Blood</option>
+            <option value="Rise of the Shogun">Rise of the Shogun</option>
+            <option value="Samurai Edition">Samurai Edition</option>
+            <option value="Samurai Edition Banzai">Samurai Edition Banzai</option>
+            <option value="Scorpion Clan Coup 1">Scorpion Clan Coup 1</option>
+            <option value="Scorpion Clan Coup 2">Scorpion Clan Coup 2</option>
+            <option value="Scorpion Clan Coup 3">Scorpion Clan Coup 3</option>
+            <option value="Second City">Second City</option>
+            <option value="Seeds of Decay">Seeds of Decay</option>
+            <option value="Shadowlands">Shadowlands</option>
+            <option value="Siege of Sleeping Mountain">Siege of Sleeping Mountain</option>
+            <option value="Siege: Clan War">Siege: Clan War</option>
+            <option value="Siege: Heart of Darkness">Siege: Heart of Darkness</option>
+            <option value="Soul of the Empire">Soul of the Empire</option>
+            <option value="Storms Over Matsu Palace">Storms Over Matsu Palace</option>
+            <option value="Stronger Than Steel">Stronger Than Steel</option>
+            <option value="test">test</option>
+            <option value="Test of Enlightenment">Test of Enlightenment</option>
+            <option value="Test of the Emerald and Jade Championships">Test of the Emerald and Jade Championships</option>
+            <option value="The Coming Storm">The Coming Storm</option>
+            <option value="The Currency of War">The Currency of War</option>
+            <option value="The Dark Journey Home">The Dark Journey Home</option>
+            <option value="The Dead of Winter">The Dead of Winter</option>
+            <option value="The Fall of Otosan Uchi">The Fall of Otosan Uchi</option>
+            <option value="The Harbinger">The Harbinger</option>
+            <option value="The Heaven's Will">The Heaven's Will</option>
+            <option value="The Imperial Gift 1">The Imperial Gift 1</option>
+            <option value="The Imperial Gift 2">The Imperial Gift 2</option>
+            <option value="The Imperial Gift 3">The Imperial Gift 3</option>
+            <option value="The New Order">The New Order</option>
+            <option value="The Plague War">The Plague War</option>
+            <option value="The Shadow's Embrace">The Shadow's Embrace</option>
+            <option value="The Truest Test">The Truest Test</option>
+            <option value="The War of Spirits">The War of Spirits</option>
+            <option value="Thunderous Acclaim">Thunderous Acclaim</option>
+            <option value="Time of the Void">Time of the Void</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="Top Deck Booster Pack">Top Deck Booster Pack</option>
+            <option value="Torn Asunder">Torn Asunder</option>
+            <option value="Training Grounds">Training Grounds</option>
+            <option value="Training Grounds 2">Training Grounds 2</option>
+            <option value="Twenty Festivals">Twenty Festivals</option>
+            <option value="War of Honor">War of Honor</option>
+            <option value="Web of Lies">Web of Lies</option>
+            <option value="Winds of Change">Winds of Change</option>
+            <option value="Words and Deeds">Words and Deeds</option>
+            <option value="Wrath of the Emperor">Wrath of the Emperor</option>
+            <optgroup label="Promotional">
+              <option value="Promotional&amp;ndash;Celestial">–Celestial</option>
+              <option value="Promotional&amp;ndash;CWF">–CWF</option>
+              <option value="Promotional&amp;ndash;Diamond">–Diamond</option>
+              <option value="Promotional&amp;ndash;Emperor">–Emperor</option>
+              <option value="Promotional&amp;ndash;Gold">–Gold</option>
+              <option value="Promotional&amp;ndash;Imperial">–Imperial</option>
+              <option value="Promotional&amp;ndash;Ivory">–Ivory</option>
+              <option value="Promotional&amp;ndash;Jade">–Jade</option>
+              <option value="Promotional&amp;ndash;Lotus">–Lotus</option>
+              <option value="Promotional&amp;ndash;Samurai">–Samurai</option>
+              <option value="Promotional&amp;ndash;Twenty Festivals">–Twenty Festivals</option>
+            </optgroup>
+          </select>
+          <select id="input7" class="search-input-choice">
+            <option value="" selected=""></option><option value="Onyx Edition">Onyx Edition</option>
+            <option value="A&amp;nbsp;Brother's&amp;nbsp;Destiny&amp;nbsp;(Twenty&amp;nbsp;Festivals)">A&nbsp;Brother's&nbsp;Destiny&nbsp;(Twenty&nbsp;Festivals)</option>
+            <option value="A&amp;nbsp;Brother's&amp;nbsp;Destiny&amp;nbsp;(Ivory&amp;nbsp;Edition)">A&nbsp;Brother's&nbsp;Destiny&nbsp;(Ivory&nbsp;Edition)</option>
+            <option value="Age&amp;nbsp;of&amp;nbsp;Conquest&amp;nbsp;(Emperor)">Age&nbsp;of&nbsp;Conquest&nbsp;(Emperor)</option>
+            <option value="Destroyer&amp;nbsp;War&amp;nbsp;(Celestial)">Destroyer&nbsp;War&nbsp;(Celestial)</option>
+            <option value="Race&amp;nbsp;for&amp;nbsp;the&amp;nbsp;Throne&amp;nbsp;(Samurai)">Race&nbsp;for&nbsp;the&nbsp;Throne&nbsp;(Samurai)</option>
+            <option value="Age&amp;nbsp;of&amp;nbsp;Enlightenment&amp;nbsp;(Lotus)">Age&nbsp;of&nbsp;Enlightenment&nbsp;(Lotus)</option>
+            <option value="Rain&amp;nbsp;of&amp;nbsp;Blood&amp;nbsp;(Diamond)">Rain&nbsp;of&nbsp;Blood&nbsp;(Diamond)</option>
+            <option value="Four&amp;nbsp;Winds&amp;nbsp;(Gold)">Four&nbsp;Winds&nbsp;(Gold)</option>
+            <option value="Hidden&amp;nbsp;Emperor&amp;nbsp;(Jade)">Hidden&nbsp;Emperor&nbsp;(Jade)</option>
+            <option value="Clan&amp;nbsp;Wars&amp;nbsp;(Imperial)">Clan&nbsp;Wars&nbsp;(Imperial)</option>
+            <option value="Not&amp;nbsp;Legal&amp;nbsp;(Proxy)">Not&nbsp;Legal&nbsp;(Proxy)</option>
+          </select>
+        </div>
+        <button>Advanced</button>
+        <button id="search-button">Search</button>
+      </div>
+      <div id="header-field">
+
+      </div>
     </div>
+
+    <div id="card-space">
+      <div class="card">
+        <div class="image-holder">
+          <!-- Insert image here. -->
+        </div>
+        <div class="card-info">
+          <div class="card-basics">
+            <p class="card-title"><span class="info-title">Card Title</span> Steel Soul Dojo</p>
+            <p class="card-stats"><span class="info-title">PS/GP/SH</span> 7	4	0</p>
+            <p class="card-keywords"><span class="info-title">Keywords</span> Dojo</p>
+          </div>
+          <div class="card-wording">
+            <p class="card-text">You do not lose Honor from Spider Clan and Fate cards you own. After the resolution of the first Dark Virtue action you took each phase: Draw a card.</p>
+            <p class="card-flavor">"Serve your lord until you are strong enough to take his place. It is the way of the Spider." - Daigotsu Kanpeki</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-holder">
+          <!-- Insert image here. -->
+        </div>
+        <div class="card-info">
+          <div class="card-basics">
+            <p class="card-title"><span class="info-title">Card Title</span> Steel Soul Dojo</p>
+            <p class="card-stats"><span class="info-title">PS/GP/SH</span> 7	4	0</p>
+            <p class="card-keywords"><span class="info-title">Keywords</span> Dojo</p>
+          </div>
+          <div class="card-wording">
+            <p class="card-text">Your Family Honor has a maximum value of 0. You will not lose or be eliminated by Dishonor. You may not take Political actions or actions that cause other players unconditional Honor losses. Your Undead cards in and out of play have -2 Gold Cost. Negate all Fear effects upon your cards. After another player's non-Shadowlands Personality or Follower is destroyed, create a 1F Shadowlands • Undead Follower and attach it to one of your target unbowed Personalities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-holder">
+          <!-- Insert image here. -->
+        </div>
+        <div class="card-info">
+          <div class="card-basics">
+            <p class="card-title"><span class="info-title">Card Title</span> Steel Soul Dojo</p>
+            <p class="card-stats"><span class="info-title">PS/GP/SH</span> 7 4 0</p>
+            <p class="card-keywords"><span class="info-title">Keywords</span> Dojo</p>
+          </div>
+          <div class="card-wording">
+            <p class="card-text">You do not lose Honor from Spider Clan and Fate cards you own. After the resolution of the first Dark Virtue action you took each phase: Draw a card.</p>
+            <p class="card-flavor">"Serve your lord until you are strong enough to take his place. It is the way of the Spider." - Daigotsu Kanpeki</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-holder">
+          <!-- Insert image here. -->
+        </div>
+        <div class="card-info">
+          <div class="card-basics">
+            <p class="card-title"><span class="info-title">Card Title</span> Steel Soul Dojo</p>
+            <p class="card-stats"><span class="info-title">PS/GP/SH</span> 7 4 0</p>
+            <p class="card-keywords"><span class="info-title">Keywords</span> Dojo</p>
+          </div>
+          <div class="card-wording">
+            <p class="card-text">You do not lose Honor from Spider Clan and Fate cards you own. After the resolution of the first Dark Virtue action you took each phase: Draw a card.</p>
+            <p class="card-flavor">"Serve your lord until you are strong enough to take his place. It is the way of the Spider." - Daigotsu Kanpeki</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.js"></script>
     <script src="app.js"></script>
